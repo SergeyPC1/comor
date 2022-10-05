@@ -1,7 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-WIDGET TEST
 </body>
-JS script here
+<script>
+  window.ctrlSettings = {
+    webWidget: {
+      actorId: "eab2b4c3-f251-4fc3-9708-df0bd2dc5ec2"
+    }};
+</script>
+<script>
+  (function () {
+    window.ctrl = window.ctrl || function () {
+      (window.ctrl.q = window.ctrl.q || []).push(arguments);
+    };
+    var script = document.createElement("script");
+    var parent = document.getElementsByTagName("script")[0].parentNode;
+    script.async = 1;
+    script.src = "https://widget.control.events/shim.js";
+    parent.appendChild(script);
+  })();
+</script>
 </html>
